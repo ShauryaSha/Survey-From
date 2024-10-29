@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="title">
+    Shaurya Sharma Survey Form
+  </h1>
+  <p id="description">
+    Thank You for taking out some time and helping me improve myself.
+  </p>
+  <form id="survey-form">
+    <fieldset class="box1">
+      <label id="name-label"> Name:</label><input id="name" type="text" required placeholder="Enter Your Name"></input>
+      <label id="email-label">Email:</label> <input id="email" type="email" required placeholder="Enter Your Email">
+      <label id="number-label">Age: (Optional) </label><input type="text" id="number" placeholder="Enter You Age"
+        min="13" max="120"> <br>
+      <label id="forgot_this">Which option best defines your current role?
+        <select id="dropdown">
+          <option>Select Current Role</option>
+          <option>Student</option>
+          <option>Working Professional</option>
+          <option>Prefer not say</option>
+          <option>Other</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset class="box2">
+      <legend id="another">Would you recommend my LinkedIn to a recruiter?</legend>
+      <label><input name="refer" type="radio" value="definitely" checked>Definitely</label>
+      <label><input name="refer" type="radio" value="maybe">Maybe</label>
+      <label><input name="refer" type="radio" value="not_sure">Not sure</label>
+    </fieldset>
+    <fieldset class="box3">
+      <legend id="another">What do you like about my LinkedIn profile? (Select all that apply)</legend>
+      <label>
+        <input type="checkbox" name="likes" value="profile_picture"> Profile Picture
+      </label>
+      <label>
+        <input type="checkbox" name="likes" value="headline"> Headline
+      </label>
+      <label>
+        <input type="checkbox" name="likes" value="experience"> Experience Section
+      </label>
+      <label>
+        <input type="checkbox" name="likes" value="skills"> Skills Section
+      </label>
+      <label>
+        <input type="checkbox" name="likes" value="recommendations"> Recommendations
+      </label>
+    </fieldset>
+
+    <label class="box4">Feel free to give any suggestions <textarea id="bio" name="bio" rows="3" cols="30"
+        placeholder="Enter you comments here... "></textarea>
+    </label>
+    <br>
+    <input type="submit" value="Submit" class="button-30" />
+  </form>
+</body>
+
+</html>
